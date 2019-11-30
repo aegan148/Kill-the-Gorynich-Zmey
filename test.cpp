@@ -2,7 +2,7 @@
 
 class zmey {
 public:
-	zmey(int& h, int& t);        //construct
+	zmey(const int& h, const int& t);        //construct
 	void strike();               //hit logic 
 	bool is_Win();               //check win
 	int count_Strike();          //return number of strike
@@ -10,10 +10,10 @@ public:
 private:
 	int counter;
 	int head;
-	int	teal;
+	int teal;
 };
 ///////////////////////////////
-zmey::zmey(int& h, int& t) {
+zmey::zmey(const int& h, const int& t) {
 	this->head = h;
 	this->teal = t;
 	counter = 0;
